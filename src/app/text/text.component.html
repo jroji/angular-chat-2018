@@ -1,0 +1,5 @@
+<section class="text">
+  <input class="text_user" [(ngModel)]="_username" placeholder="username" name="username" type="text">
+  <textarea [(ngModel)]="_text" name="text" [placeholder]="placeholder" class="text_input"></textarea>
+  <button class="text_button" (click)="emitEvent()"> {{ buttonLabel }}</button>
+</section>

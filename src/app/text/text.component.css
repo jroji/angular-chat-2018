@@ -1,0 +1,29 @@
+.text {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background: white;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid lightgray;
+}
+.text_input, .text_user {
+    margin: 10px 0;
+    border-width: 0 0 1px 0;
+    background: none;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+
+.text_button {
+    background: #0075b8;
+    color: white;
+    color: #333;
+    cursor: pointer;
+    padding: 20px 0;
+    font-size: 22px;
+    color: white;
+}

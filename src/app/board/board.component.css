@@ -1,0 +1,19 @@
+.board {
+    padding: 20px;
+    max-height: calc(100vh - 245px);
+    overflow-y: scroll;
+}
+
+.message {
+    border-radius: 10px;
+    background: #ededff;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 10px 0;
+}
+
+.message_title {
+    margin: 0;
+}

@@ -1,0 +1,6 @@
+<section class="board">
+  <article class="message" *ngFor="let message of messages">
+    <h1 class="message_title">{{ message?.username }} </h1>
+    <p> {{ message?.text }}</p>
+  </article>
+</section>

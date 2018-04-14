@@ -1,0 +1,10 @@
+* {
+    font-family: arial;
+    box-sizing: border-box;
+}
+
+.header {
+    background: #cfcfcf;
+    padding: 10px;
+    margin: 0;
+}

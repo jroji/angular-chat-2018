@@ -1,4 +1,5 @@
-import { Message } from './../message';
+import { MessagesService } from './../../services/messages.service';
+import { Message } from './../../message';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -9,29 +10,21 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class TextComponent {
   @Input() placeholder: String;
   @Input() buttonLabel: String;
+  @Input() currentUser: String;
 
-  @Output() clicked = new EventEmitter<Message>();
-
-  private _username: string;
   private _text: string;
 
-  constructor() { }
+  constructor(private messageService: MessagesService) { }
 
   /**
    * Emits the event to save it in the app array
    */
   emitEvent() {
-    if (!this._username || this._username === '' || !this._text || this._text === '') {
-      return;
-    }
-
-    this.clicked.emit({
-      username: this._username,
-      text: this._text
+    this.messageService.pushMessage({
+      message: this._text,
+      username: this.currentUser,
+      timestamp: new Date().getTime(),
     });
-
-    this._username = '';
-    this._text = '';
   }
 
 }

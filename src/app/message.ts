@@ -1,4 +1,5 @@
 export interface Message {
     username: String;
-    text: String;
+    message: String;
+    timestamp: number;
 }

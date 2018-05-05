@@ -17,3 +17,11 @@
 .message_title {
     margin: 0;
 }
+
+.message.active {
+    background: red;
+}
+
+.message.other {
+    background: green;
+}

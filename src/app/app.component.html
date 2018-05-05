@@ -1,5 +1,15 @@
 <header class="header">
-  <h1> {{ title }}</h1>
+  <div class="header_top">
+    <h1> {{ title }}</h1>
+  </div>
+  <nav class="header_nav">
+    <a routerLink="/home" routerLinkActive="active">Home</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/lazy" routerLinkActive="active">Lazy</a>
+  </nav>
+
 </header>
-<chat-board [messages]="messages"></chat-board>
-<app-text buttonLabel="Send!" placeholder="Text something here... " (clicked)="addMessage($event) "></app-text>
+
+<section>
+  <router-outlet></router-outlet>
+</section>

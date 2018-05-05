@@ -5,6 +5,22 @@
 
 .header {
     background: #cfcfcf;
-    padding: 10px;
     margin: 0;
+}
+
+.header_top {
+    padding: 10px;
+}
+
+.header_nav {
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid gray;
+}
+a {
+    transition: .5s all;
+}
+.active {
+    color: red;
+    font-size: 16px;
 }

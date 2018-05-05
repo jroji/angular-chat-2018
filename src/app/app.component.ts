@@ -1,5 +1,6 @@
 import { Message } from './message';
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -9,21 +10,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   // Title of the application
   title = 'Chat board project';
-  // Messages array
-  messages: Array<Message>;
 
-  /**
-   * Initialize the messages array in order to push new messages
-   */
-  constructor() {
-    this.messages = [];
-  }
-
-  /**
-   * Adds a new message to the messages array
-   */
-  addMessage(ev) {
-    this.messages.push(ev);
-    console.log(this.messages);
-  }
 }

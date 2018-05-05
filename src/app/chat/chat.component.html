@@ -1,0 +1,6 @@
+<nav>
+  <button (click)="setUser('Jon')">Jon</button>
+  <button (click)="setUser('Paco')">Paco</button>
+</nav>
+<chat-board [currentUser]="currentUser"></chat-board>
+<app-text [currentUser]="currentUser" buttonLabel="Send!" placeholder="Text something here... " (clicked)="addMessage($event) "></app-text>

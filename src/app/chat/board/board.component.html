@@ -1,0 +1,9 @@
+<section class="board">
+  <article class="message" *ngFor="let message of messages | async ; index as i">
+    {{i}}
+    <div *ngIf="message?.username !== currentUser">
+      <h1 class="message_title">{{ message?.username }} </h1>
+    </div>
+    <p> {{ message?.message }}</p>
+  </article>
+</section>

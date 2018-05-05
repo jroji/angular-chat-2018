@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Optional, OnDestroy } from '@angular/core';
   templateUrl: './board.component.html',
   styleUrls: ['./board.component.css']
 })
-export class BoardComponent implements OnDestroy {
+export class BoardComponent {
   messages: any;
   @Input() currentUser;
 
